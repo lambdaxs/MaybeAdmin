@@ -19,4 +19,5 @@ export default async function request(url, options) {
     const response = await fetch(url, options);
     checkStatus(response);
     return await response.json();
+    
 }
